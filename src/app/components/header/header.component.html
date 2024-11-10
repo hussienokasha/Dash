@@ -1,0 +1,59 @@
+<nav class="w-full flex bg-white py-6 justify-center gap-6 align-center">
+  <div class="flex gap-8">
+    <div class="flex gap-4 align-center">
+      <div class="relative">
+        <i class="fa-solid fa-gas-pump text-4xl"></i>
+        <i
+          class="absolute fa-solid fa-circle bottom-0 -left-4 text-main-color text-xs"
+        ></i>
+      </div>
+      <div class="flex align-center gap-2">
+        <p class="text-3xl">2/3</p>
+        <p class="text-sm">
+          Monitored <br />
+          Stations
+        </p>
+      </div>
+    </div>
+    <div class="flex gap-4 align-center">
+      <div class="relative">
+        <i class="fa-solid fa-clock-rotate-left text-4xl"></i>
+        <i
+          class="absolute fa-solid fa-circle bottom-0 -left-4 text-main-color text-xs"
+        ></i>
+      </div>
+      <div class="flex align-center gap-2">
+        <p class="text-3xl">20s</p>
+        <p class="text-sm">
+          Last <br />
+          Update
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-2 align">
+    <a class="text-white bg-main-color rounded-full px-6 py-1 h-fit">TODAY</a>
+    <a class="px-6 py-1 h-fit">YESTERDAY</a>
+    <a class="px-6 py-1 h-fit">LAST WEEK</a>
+  </div>
+  <div class="flex gap-4">
+    <div class="flex align-center border-b-2 border-black gap-3">
+      <div class="pt-1">
+        <i class="fa-solid fa-play text-main-color"></i>
+      </div>
+      <p class="h-fit pt-1 pe-10">
+        Start <span class="text-xs">date-time</span>
+      </p>
+      <input type="datetime-local" id="datetime" class="w-5" />
+    </div>
+    <div class="flex align-center border-b-2 border-black gap-3">
+      <div class="pt-1">
+        <i class="fa-solid fa-square text-main-color"></i>
+      </div>
+      <p class="h-fit pt-1 pe-10">
+        End <span class="text-xs">date-time</span>
+      </p>
+      <input type="datetime-local" id="datetime" class="w-5" />
+    </div>
+  </div>
+</nav>

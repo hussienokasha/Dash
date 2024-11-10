@@ -1,0 +1,31 @@
+<div>
+  <div class="flex gap-3 justify-end">
+    <div
+      class="rounded-full px-6 py-1 cursor-pointer"
+      [ngClass]="{
+        'bg-main-color text-white': isGraph,
+        'bg-transparent text-black': !isGraph
+      }"
+      (click)="isGraph = true"
+    >
+      <i class="fa-solid fa-chart-simple"></i> GRAPH
+    </div>
+    <div
+      class="rounded-full px-6 py-1 cursor-pointer"
+      [ngClass]="{
+        'bg-main-color text-white': !isGraph,
+        'bg-transparent text-black': isGraph
+      }"
+      (click)="isGraph = false"
+    >
+      <i class="fa-solid fa-bars-staggered"></i> LIST
+    </div>
+  </div>
+  <div class="p-4">
+    @if(isGraph){
+    <app-graph></app-graph>
+    }@else {
+    <app-list></app-list>
+    }
+  </div>
+</div>
